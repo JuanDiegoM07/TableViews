@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycustomcell" rowHeight="100" id="KGk-i7-Jjw" customClass="MyCustomTableViewCell" customModule="TableViewsPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4i-jR-vMk">
+                        <rect key="frame" x="16" y="16" width="157" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lIG-N2-iLW">
+                        <rect key="frame" x="189" y="17" width="200" height="55.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="B3E-Cv-boR"/>
+                            <constraint firstAttribute="width" constant="200" id="p88-1G-xBq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-PU-ENt">
+                        <rect key="frame" x="16" y="53" width="157" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s2t-PU-ENt" firstAttribute="top" secondItem="g4i-jR-vMk" secondAttribute="bottom" constant="16" id="01q-uf-Y4W"/>
+                    <constraint firstItem="g4i-jR-vMk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="6yt-LW-x7y"/>
+                    <constraint firstAttribute="bottom" secondItem="s2t-PU-ENt" secondAttribute="bottom" constant="16" id="7J4-dh-mje"/>
+                    <constraint firstItem="s2t-PU-ENt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7f6-Eg-Bub"/>
+                    <constraint firstItem="lIG-N2-iLW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="IPy-cU-aDJ"/>
+                    <constraint firstAttribute="trailing" secondItem="lIG-N2-iLW" secondAttribute="trailing" constant="16" id="RKq-7Z-3LT"/>
+                    <constraint firstAttribute="bottom" secondItem="lIG-N2-iLW" secondAttribute="bottom" constant="16" id="VhB-RM-Z30"/>
+                    <constraint firstItem="lIG-N2-iLW" firstAttribute="leading" secondItem="s2t-PU-ENt" secondAttribute="trailing" constant="16" id="axp-Ye-aPM"/>
+                    <constraint firstItem="s2t-PU-ENt" firstAttribute="top" secondItem="g4i-jR-vMk" secondAttribute="bottom" constant="16" id="iNc-ZE-072"/>
+                    <constraint firstItem="g4i-jR-vMk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="soW-Pp-UG0"/>
+                    <constraint firstItem="lIG-N2-iLW" firstAttribute="leading" secondItem="g4i-jR-vMk" secondAttribute="trailing" constant="16" id="zyN-md-Zdg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myFirstLabel" destination="g4i-jR-vMk" id="ssG-IU-pOd"/>
+                <outlet property="myImage" destination="lIG-N2-iLW" id="GKg-gr-XJu"/>
+                <outlet property="mySecondLabel" destination="s2t-PU-ENt" id="9z7-jY-JWd"/>
+            </connections>
+            <point key="canvasLocation" x="209.42028985507247" y="139.28571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+    </resources>
+</document>
